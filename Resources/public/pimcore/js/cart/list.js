@@ -14,6 +14,10 @@ pimcore.registerNS('coreshop.order.cart.list');
 coreshop.order.cart.list = Class.create(coreshop.order.sale.list, {
     type: 'cart',
 
+    url: {
+        folder: '/admin/coreshop/cart/get-folder-configuration'
+    },
+
     enhanceGridLayout: function($super, grid) {
         $super(grid);
 
