@@ -16,12 +16,18 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\Renderer\Pdf;
+namespace CoreShop\Bundle\OrderBundle\Attribute;
 
-/**
- * @deprecated Deprecated since CoreShop 4.1, to be removed in CoreShop 5.0. No replacement available, use Pimcore's Web2Print Renderer instead.
- */
-interface PdfRendererInterface
+#[\Attribute(\Attribute::TARGET_CLASS)]
+final class AsPurchasableCustomAttributesCalculator
 {
-    public function fromString(string $string, string $header = '', string $footer = '', array $config = []): string;
+    public function __construct(
+        private ?string $type = null,
+    ) {
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
 }
