@@ -15,47 +15,47 @@ import { serviceIds } from '@pimcore/studio-ui-bundle/app'
 import { type IconLibrary } from '@pimcore/studio-ui-bundle/modules/icon-library'
 
 // @ts-ignore
-import ordersIcon from '../assets/orders.svg?react'
+import ordersIcon from '../../assets/orders.svg?react'
 // @ts-ignore
-import quotesIcon from '../assets/quotes.svg?react'
+import quotesIcon from '../../assets/quotes.svg?react'
 // @ts-ignore
-import invoiceIcon from '../assets/invoice.svg?react'
+import invoiceIcon from '../../assets/invoice.svg?react'
 // @ts-ignore
-import shipmentIcon from '../assets/shipment.svg?react'
+import shipmentIcon from '../../assets/shipment.svg?react'
 // @ts-ignore
-import pdfIcon from '../assets/pdf.svg?react'
+import pdfIcon from '../../assets/pdf.svg?react'
 // @ts-ignore
-import mailIcon from '../assets/mail.svg?react'
+import mailIcon from '../../assets/mail.svg?react'
 // @ts-ignore
-import orderCreateIcon from '../assets/order-create.svg?react'
+import orderCreateIcon from '../../assets/order-create.svg?react'
 // @ts-ignore
-import quoteCreateIcon from '../assets/quote-create.svg?react'
+import quoteCreateIcon from '../../assets/quote-create.svg?react'
 // @ts-ignore
-import conditionsIcon from '../assets/conditions.svg?react'
+import conditionsIcon from '../../assets/conditions.svg?react'
 // @ts-ignore
-import cursorIcon from '../assets/cursor.svg?react'
+import cursorIcon from '../../assets/cursor.svg?react'
 // @ts-ignore
-import currenciesIcon from '../assets/currencies.svg?react'
+import currenciesIcon from '../../assets/currencies.svg?react'
 // @ts-ignore
-import timeSpanIcon from '../assets/time-span.svg?react'
+import timeSpanIcon from '../../assets/time-span.svg?react'
 // @ts-ignore
-import voucherIcon from '../assets/voucher.svg?react'
+import voucherIcon from '../../assets/voucher.svg?react'
 // @ts-ignore
-import notCombinableIcon from '../assets/not_combinable.svg?react'
+import notCombinableIcon from '../../assets/not_combinable.svg?react'
 // @ts-ignore
-import cartIcon from '../assets/cart.svg?react'
+import cartIcon from '../../assets/cart.svg?react'
 // @ts-ignore
-import cartCreateIcon from '../assets/cart-create.svg?react'
+import cartCreateIcon from '../../assets/cart-create.svg?react'
 // @ts-ignore
-import infoIcon from '../assets/info.svg?react'
+import infoIcon from '../../assets/info.svg?react'
 // @ts-ignore
-import commentsIcon from '../assets/comments.svg?react'
+import commentsIcon from '../../assets/comments.svg?react'
 // @ts-ignore
-import addIcon from '../assets/add.svg?react'
+import addIcon from '../../assets/add.svg?react'
 // @ts-ignore
-import removeIcon from '../assets/remove.svg?react'
+import removeIcon from '../../assets/remove.svg?react'
 // @ts-ignore
-import productAddIcon from '../assets/product-add.svg?react'
+import productAddIcon from '../../assets/product-add.svg?react'
 
 export const OrderBundleIconModule: AbstractModule = {
   onInit(): void {
