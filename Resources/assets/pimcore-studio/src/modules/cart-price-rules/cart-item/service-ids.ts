@@ -10,8 +10,10 @@
  * @license    CoreShop Commercial License (CCL)
  */
 
-export { AmountCondition } from './AmountCondition'
-export { VoucherCondition } from './VoucherCondition'
-export { TimespanCondition } from './TimespanCondition'
-export { NestedCondition } from './NestedCondition'
-export { NotCombinableCondition } from './NotCombinableCondition'
+/**
+ * Service IDs for CoreShop Order CartItem registries
+ */
+export const coreshopOrderServiceIds = {
+  cartItemActionRegistry: 'CoreShopOrderCartItemActionRegistry',
+  cartItemConditionRegistry: 'CoreShopOrderCartItemConditionRegistry'
+} as const
