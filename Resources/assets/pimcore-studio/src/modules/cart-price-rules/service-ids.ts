@@ -11,9 +11,15 @@
  */
 
 /**
- * Service IDs for CoreShop Order CartItem registries
+ * Service IDs for CoreShop Order registries
+ * Includes both CartPriceRule and CartItem registries
  */
 export const coreshopOrderServiceIds = {
+  // CartPriceRule registries
+  cartPriceRuleConditionRegistry: Symbol.for('coreshop.order.cart_price_rule.condition_registry'),
+  cartPriceRuleActionRegistry: Symbol.for('coreshop.order.cart_price_rule.action_registry'),
+
+  // CartItem registries (used within CartPriceRule actions)
   cartItemActionRegistry: 'CoreShopOrderCartItemActionRegistry',
   cartItemConditionRegistry: 'CoreShopOrderCartItemConditionRegistry'
 } as const
