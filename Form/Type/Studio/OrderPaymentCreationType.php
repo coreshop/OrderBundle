@@ -15,32 +15,37 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\Form\Type;
+namespace CoreShop\Bundle\OrderBundle\Form\Type\Studio;
 
+use CoreShop\Bundle\PaymentBundle\Form\Type\PaymentProviderChoiceType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\CollectionType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-final class OrderShipmentCreationType extends AbstractType
+final class OrderPaymentCreationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('trackingCode', TextType::class, [
-                'priority' => 200
+            ->add('date', DateType::class, [
+                'widget' => 'single_text',
+                'label' => 'coreshop_date',
             ])
-            ->add('id', IntegerType::class)
-            ->add('items', CollectionType::class, [
-                'entry_type' => OrderShipmentCreationItemsType::class,
-                'allow_add' => true,
-                'allow_delete' => true,
-                'by_reference' => false,
-                'error_bubbling' => false,
+            ->add('paymentProvider', PaymentProviderChoiceType::class, [
+                'label' => 'coreshop_paymentProvider',
+            ])
+            ->add('amount', NumberType::class, [
+                'scale' => 2,
+                'label' => 'coreshop_amount',
             ])
         ;
+    }
+
+    public function getBlockPrefix(): string
+    {
+        return 'coreshop_order_payment_creation';
     }
 
     public function configureOptions(OptionsResolver $resolver): void

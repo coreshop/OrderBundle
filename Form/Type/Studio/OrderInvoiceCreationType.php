@@ -15,32 +15,31 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\Form\Type;
+namespace CoreShop\Bundle\OrderBundle\Form\Type\Studio;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-final class OrderShipmentCreationType extends AbstractType
+final class OrderInvoiceCreationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('trackingCode', TextType::class, [
-                'priority' => 200
-            ])
-            ->add('id', IntegerType::class)
+            ->add('id', HiddenType::class)
             ->add('items', CollectionType::class, [
-                'entry_type' => OrderShipmentCreationItemsType::class,
-                'allow_add' => true,
-                'allow_delete' => true,
-                'by_reference' => false,
-                'error_bubbling' => false,
+                'entry_type' => OrderInvoiceCreationItemsType::class,
+                'block_prefix' => 'grid_collection',
+                'label' => 'coreshop_products',
             ])
         ;
+    }
+
+    public function getBlockPrefix(): string
+    {
+        return 'coreshop_order_invoice_creation';
     }
 
     public function configureOptions(OptionsResolver $resolver): void
