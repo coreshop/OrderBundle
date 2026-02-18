@@ -15,9 +15,9 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\Pimcore\GridColumnConfig\Operator\Factory;
+namespace CoreShop\Bundle\OrderBundle\AdminClass\Pimcore\GridColumnConfig\Operator\Factory;
 
-use CoreShop\Bundle\OrderBundle\Pimcore\GridColumnConfig\Operator\OrderState;
+use CoreShop\Bundle\OrderBundle\AdminClass\Pimcore\GridColumnConfig\Operator\OrderState;
 use CoreShop\Bundle\WorkflowBundle\StateManager\WorkflowStateInfoManagerInterface;
 use Pimcore\Bundle\AdminBundle\DataObject\GridColumnConfig\Operator\Factory\OperatorFactoryInterface;
 

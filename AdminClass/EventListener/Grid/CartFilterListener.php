@@ -15,7 +15,7 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\EventListener\Grid;
+namespace CoreShop\Bundle\OrderBundle\AdminClass\EventListener\Grid;
 
 use Pimcore\Model\DataObject;
 use Symfony\Component\EventDispatcher\GenericEvent;

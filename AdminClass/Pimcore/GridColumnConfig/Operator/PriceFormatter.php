@@ -15,7 +15,7 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Bundle\OrderBundle\Pimcore\GridColumnConfig\Operator;
+namespace CoreShop\Bundle\OrderBundle\AdminClass\Pimcore\GridColumnConfig\Operator;
 
 use CoreShop\Component\Currency\Formatter\MoneyFormatterInterface;
 use CoreShop\Component\Currency\Model\CurrencyAwareInterface;
