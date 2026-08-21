@@ -21,7 +21,7 @@
     },
     "globalName": "coreshoporder",
     "pluginVersion": "2.5.1",
-    "publicPath": "/bundles/coreshoporder/studio/f49d73b6b0581e607fa51d9ace4c691e/"
+    "publicPath": "/bundles/coreshoporder/studio/c58a027c299998abe32d851e9696fd84/"
   },
   "shared": [
     {
@@ -118,7 +118,7 @@
           "async": [],
           "sync": [
             "static/js/async/44.e2626666.js",
-            "static/js/async/663.32dbbfc8.js"
+            "static/js/async/663.b2e3ad93.js"
           ]
         },
         "css": {
@@ -406,7 +406,7 @@
       "usedIn": [
         ".../../../MenuBundle/Resources/assets/pimcore-studio/src/modules/menu-extension.tsx + 2 modules",
         ".../../../MenuBundle/Resources/assets/pimcore-studio/src/services/button-registry.ts",
-        "src/main.ts + 100 modules",
+        "src/main.ts + 101 modules",
         "src/modules/sales/SaleDetail.tsx",
         ".../../../ResourceBundle/Resources/assets/pimcore-studio/src/entities/index.ts + 22 modules",
         ".../../../ResourceBundle/Resources/assets/pimcore-studio/src/index.ts + 6 modules",
@@ -424,7 +424,7 @@
       "moduleName": "app",
       "usedIn": [
         ".../../../MenuBundle/Resources/assets/pimcore-studio/src/modules/menu-extension.tsx + 2 modules",
-        "src/main.ts + 100 modules",
+        "src/main.ts + 101 modules",
         ".../../../PimcoreBundle/Resources/assets/pimcore-studio/src/utils/index.ts + 1 modules",
         ".../../../ResourceBundle/Resources/assets/pimcore-studio/src/index.ts + 6 modules"
       ],
@@ -436,7 +436,7 @@
       "federationContainerName": "promise new Promise(resolve => {\n      const studioUIBundleRemoteUrl = window.StudioUIBundleRemoteUrl\n      const script = document.createElement('script')\n\n      let hasScript = false;\n\n      document.querySelectorAll('script').forEach((el) => {\n        const elPathname = el.src.replace(/https?:\\/\\/[^/]+/, '')\n        const studioUIBundleRemoteUrlPathname = studioUIBundleRemoteUrl.replace(/https?:\\/\\/[^/]+/, '')\n\n        if (elPathname === studioUIBundleRemoteUrlPathname) {\n          hasScript = true;\n          return;\n        }\n      })\n\n      if (hasScript) {\n        resolve({\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        })\n        return\n      }\n\n      script.src = studioUIBundleRemoteUrl\n      script.onload = () => {\n        const proxy = {\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        }\n        resolve(proxy)\n      }\n      document.head.appendChild(script);\n    })\n    ",
       "moduleName": "modules/element",
       "usedIn": [
-        "src/main.ts + 100 modules",
+        "src/main.ts + 101 modules",
         ".../../../ResourceBundle/Resources/assets/pimcore-studio/src/index.ts + 6 modules"
       ],
       "version": "*"
@@ -449,7 +449,7 @@
       "usedIn": [
         "src/grid-transformers/components/order-state/order-state.tsx",
         "src/grid-transformers/components/price-formatter/price-formatter.tsx",
-        "src/main.ts + 100 modules",
+        "src/main.ts + 101 modules",
         "src/modules/sales/SaleEditorTabs.tsx",
         ".../../../ResourceBundle/Resources/assets/pimcore-studio/src/entities/index.ts + 22 modules",
         ".../../../RuleBundle/Resources/assets/pimcore-studio/src/rules/components/RuleManager.tsx",
@@ -463,7 +463,7 @@
       "federationContainerName": "promise new Promise(resolve => {\n      const studioUIBundleRemoteUrl = window.StudioUIBundleRemoteUrl\n      const script = document.createElement('script')\n\n      let hasScript = false;\n\n      document.querySelectorAll('script').forEach((el) => {\n        const elPathname = el.src.replace(/https?:\\/\\/[^/]+/, '')\n        const studioUIBundleRemoteUrlPathname = studioUIBundleRemoteUrl.replace(/https?:\\/\\/[^/]+/, '')\n\n        if (elPathname === studioUIBundleRemoteUrlPathname) {\n          hasScript = true;\n          return;\n        }\n      })\n\n      if (hasScript) {\n        resolve({\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        })\n        return\n      }\n\n      script.src = studioUIBundleRemoteUrl\n      script.onload = () => {\n        const proxy = {\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        }\n        resolve(proxy)\n      }\n      document.head.appendChild(script);\n    })\n    ",
       "moduleName": "modules/widget-manager",
       "usedIn": [
-        "src/main.ts + 100 modules"
+        "src/main.ts + 101 modules"
       ],
       "version": "*"
     },
@@ -473,7 +473,7 @@
       "federationContainerName": "promise new Promise(resolve => {\n      const studioUIBundleRemoteUrl = window.StudioUIBundleRemoteUrl\n      const script = document.createElement('script')\n\n      let hasScript = false;\n\n      document.querySelectorAll('script').forEach((el) => {\n        const elPathname = el.src.replace(/https?:\\/\\/[^/]+/, '')\n        const studioUIBundleRemoteUrlPathname = studioUIBundleRemoteUrl.replace(/https?:\\/\\/[^/]+/, '')\n\n        if (elPathname === studioUIBundleRemoteUrlPathname) {\n          hasScript = true;\n          return;\n        }\n      })\n\n      if (hasScript) {\n        resolve({\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        })\n        return\n      }\n\n      script.src = studioUIBundleRemoteUrl\n      script.onload = () => {\n        const proxy = {\n          get: (request) => window['pimcore_studio_ui_bundle'].get(request),\n          init: (...arg) => {\n            try {\n              return window['pimcore_studio_ui_bundle'].init(...arg)\n            } catch(e) {\n              console.log('remote container already initialized')\n            }\n          }\n        }\n        resolve(proxy)\n      }\n      document.head.appendChild(script);\n    })\n    ",
       "moduleName": "modules/data-object",
       "usedIn": [
-        "src/main.ts + 100 modules"
+        "src/main.ts + 101 modules"
       ],
       "version": "*"
     },
@@ -510,9 +510,9 @@
           "sync": [
             "static/js/290.c11e550e.js",
             "static/js/768.a32a40a1.js",
-            "static/js/398.1172ea64.js",
+            "static/js/398.9038ba47.js",
             "static/js/344.bdfba7e3.js",
-            "static/js/async/__federation_expose_default_export.5e76b5ce.js"
+            "static/js/async/__federation_expose_default_export.5d21df69.js"
           ],
           "async": [
             "static/js/async/254.50f17d89.js",
