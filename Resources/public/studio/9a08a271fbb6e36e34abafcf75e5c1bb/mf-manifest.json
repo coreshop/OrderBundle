@@ -21,7 +21,7 @@
     },
     "globalName": "coreshoporder",
     "pluginVersion": "2.8.0",
-    "publicPath": "/bundles/coreshoporder/studio/b6ae696dedeee02ae7f40d31a1f52b61/"
+    "publicPath": "/bundles/coreshoporder/studio/9a08a271fbb6e36e34abafcf75e5c1bb/"
   },
   "shared": [
     {
@@ -96,7 +96,7 @@
           "async": [],
           "sync": [
             "static/js/async/44.4afee74a.js",
-            "static/js/async/663.bc760655.js"
+            "static/js/async/663.e00e3e11.js"
           ]
         },
         "css": {
@@ -362,9 +362,9 @@
           "sync": [
             "static/js/290.014c635e.js",
             "static/js/768.1bf26999.js",
-            "static/js/398.6e8f064a.js",
+            "static/js/398.b5617e56.js",
             "static/js/344.f15eaf85.js",
-            "static/js/async/__federation_expose_default_export.ceadca93.js"
+            "static/js/async/__federation_expose_default_export.38fb07b8.js"
           ],
           "async": [
             "static/js/async/254.d359b520.js",
